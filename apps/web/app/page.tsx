@@ -3,7 +3,7 @@ import { appConfig } from "@workspace-template/data";
 export default function HomePage() {
   return (
     <main className="mx-auto flex min-h-screen max-w-3xl flex-col justify-center px-6 py-16">
-      <p className="font-semibold text-blue-600 text-sm uppercase tracking-wide">
+      <p className="font-semibold text-brand-600 text-sm uppercase tracking-wide">
         Howard agent workspace
       </p>
       <h1 className="mt-4 font-bold text-4xl tracking-tight">
