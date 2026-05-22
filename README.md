@@ -6,6 +6,7 @@ Maison-style full-stack Turborepo template for Howard agent projects.
 
 - Bun workspace + Turborepo
 - Next.js app in `apps/web`
+- Tailwind CSS v4 as the default styling layer (CSS-first config; brand tokens in `apps/web/app/globals.css`)
 - Bun CLI starter in `apps/cli`
 - Shared data package in `packages/data`
 - Prisma/Postgres package in `packages/database`
@@ -57,5 +58,6 @@ Read `AGENTS.md` before editing. Keep work issue-scoped, inspect code first, mak
 1. Replace `workspace-template` and `@workspace-template/*` package names with the project namespace.
 2. Update `CONTEXT.md` with product-specific goals and non-goals.
 3. Replace the starter homepage and seed data.
-4. Add product models to `packages/database/prisma/schema.prisma`.
-5. Keep quality gates intact unless the repo explicitly chooses different gates.
+4. Retune brand tokens in `apps/web/app/globals.css` (`@theme`) and swap the font in `apps/web/app/layout.tsx`.
+5. Add product models to `packages/database/prisma/schema.prisma`.
+6. Keep quality gates intact unless the repo explicitly chooses different gates.

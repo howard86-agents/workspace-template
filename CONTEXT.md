@@ -17,7 +17,8 @@ Maison-style full-stack TypeScript monorepo:
 
 ## Current conventions
 
-- Ultracite/Biome for linting and formatting.
+- Tailwind CSS v4 is the default styling layer (utility classes, CSS-first config); brand tokens live in `apps/web/app/globals.css` `@theme`. Dark mode is OS-driven via `prefers-color-scheme`.
+- Ultracite/Biome for linting and formatting (class sorting enforced via `useSortedClasses`).
 - Commitlint with Conventional Commits.
 - Husky local gates for commit, commit message, and push checks.
 - Gitleaks and Typos in local hooks and CI.
