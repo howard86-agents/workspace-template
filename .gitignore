@@ -12,4 +12,11 @@ coverage
 apps/web/.vercel
 packages/database/generated
 
+# Ship editor config so generated repos get Tailwind IntelliSense out of the box.
+# Re-include .vscode (overriding any global gitignore), then keep only the shared files.
+!.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
 *.tsbuildinfo
