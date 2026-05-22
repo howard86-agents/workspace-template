@@ -15,7 +15,7 @@
 
 This is a Maison-style Bun/Turborepo full-stack workspace:
 
-- `apps/web` — Next.js app.
+- `apps/web` — Next.js app. Default styling is Tailwind CSS v4 utility classes; brand tokens live in `app/globals.css` `@theme`.
 - `apps/cli` — Bun CLI/scripts package.
 - `packages/data` — shared static/domain data.
 - `packages/database` — Prisma/Postgres client, schema, migrations, and seed.
