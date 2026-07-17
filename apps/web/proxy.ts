@@ -1,6 +1,4 @@
-export function proxy() {
-  return;
-}
+export const proxy = () => undefined;
 
 export const config = {
   matcher: [],

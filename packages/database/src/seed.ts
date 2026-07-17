@@ -12,10 +12,11 @@ const DEFAULT_USERS = [
 
 async function main() {
   for (const user of DEFAULT_USERS) {
+    // biome-ignore lint/performance/noAwaitInLoops: Seed order must remain deterministic.
     await prisma.user.upsert({
-      where: { email: user.email },
-      update: user,
       create: user,
+      update: user,
+      where: { email: user.email },
     });
   }
 }

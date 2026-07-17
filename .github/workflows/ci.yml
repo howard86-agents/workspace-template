@@ -18,12 +18,12 @@ jobs:
     env:
       TURBO_TELEMETRY_DISABLED: 1
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           fetch-depth: 0
 
       - name: Setup (Bun + caches + install)
-        uses: howard86/actions/setup@a99a85ee8cbe78d34e8f5e79bfd24db64fc9b112 # v1.0.0
+        uses: howard86/actions/setup@56841d1894259f87ff5a6551b6ddac457d520b83 # v1.0.2
 
       - name: Lint (ultracite)
         run: bun run check
@@ -32,6 +32,6 @@ jobs:
         run: bun run typecheck
 
       - name: Quality (typos, gitleaks, actionlint)
-        uses: howard86/actions/quality@a99a85ee8cbe78d34e8f5e79bfd24db64fc9b112 # v1.0.0
+        uses: howard86/actions/quality@56841d1894259f87ff5a6551b6ddac457d520b83 # v1.0.2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
