@@ -11,15 +11,14 @@ const DEFAULT_USERS = [
 ];
 
 async function main() {
-  await Promise.all(
-    DEFAULT_USERS.map((user) =>
-      prisma.user.upsert({
-        create: user,
-        update: user,
-        where: { email: user.email },
-      })
-    )
-  );
+  for (const user of DEFAULT_USERS) {
+    // biome-ignore lint/performance/noAwaitInLoops: Seed order must remain deterministic.
+    await prisma.user.upsert({
+      create: user,
+      update: user,
+      where: { email: user.email },
+    });
+  }
 }
 
 main()
