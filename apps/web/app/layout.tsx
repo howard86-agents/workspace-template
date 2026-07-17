@@ -11,8 +11,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Workspace Template",
   description: "Maison-style full-stack starter for Howard agent projects.",
+  title: "Workspace Template",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
