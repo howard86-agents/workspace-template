@@ -23,7 +23,7 @@ jobs:
           fetch-depth: 0
 
       - name: Setup (Bun + caches + install)
-        uses: howard86/actions/setup@56841d1894259f87ff5a6551b6ddac457d520b83 # v1.0.2
+        uses: howard86/actions/setup@402ce305af6a7cd037b84c13b41134f451708cdc # v2.0.2
 
       - name: Lint (ultracite)
         run: bun run check
