@@ -1,28 +1,28 @@
 {
-  "name": "web",
+  "name": "@workspace-template/web",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
+    "dev": "next dev",
     "start": "next start",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "next typegen && tsc --noEmit"
   },
   "dependencies": {
     "@workspace-template/data": "*",
     "@workspace-template/database": "*",
-    "better-auth": "^1.6.23",
-    "next": "16.2.10",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "better-auth": "^1.7.6",
+    "next": "16.3.6",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.6.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "@workspace-template/typescript-config": "*",
-    "@tailwindcss/postcss": "^4.3.2",
-    "@types/node": "^26.1.0",
-    "@types/react": "^18.2.61",
-    "@types/react-dom": "^18.2.19",
-    "tailwindcss": "^4.3.2",
-    "typescript": "5.5.4"
+    "tailwindcss": "^4.3.3",
+    "typescript": "7.0.2"
   }
 }

@@ -11,7 +11,7 @@ Maison-style full-stack TypeScript monorepo:
 - Bun is the package manager and runtime for scripts.
 - Turborepo coordinates workspace tasks.
 - Next.js powers `apps/web`.
-- Prisma/Postgres lives in `packages/database`.
+- Prisma/Postgres lives in `packages/database`. Prisma is pinned to exact 7.x versions: npm's `latest` tag for `prisma` points at an 8.0 release candidate that renames the CLI (`migrate` → `migration`) and drops `generate`, which breaks `db:migrate:*`, `db:seed`, and the `typecheck` task that depends on `generate`.
 - Shared data/config lives in `packages/data`.
 - Shared TypeScript compiler settings live in `packages/config-typescript`.
 
