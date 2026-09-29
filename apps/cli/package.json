@@ -10,8 +10,8 @@
     "@workspace-template/data": "*"
   },
   "devDependencies": {
-    "@workspace-template/typescript-config": "*",
     "@types/bun": "latest",
+    "@workspace-template/typescript-config": "*",
     "typescript": "5.5.4"
   }
 }

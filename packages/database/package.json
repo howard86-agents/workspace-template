@@ -22,10 +22,10 @@
     "pg": "^8.22.0"
   },
   "devDependencies": {
-    "@workspace-template/typescript-config": "*",
     "@types/pg": "^8.16.0",
+    "@workspace-template/typescript-config": "*",
     "prisma": "7.8.0",
-    "tsx": "4.23.0",
+    "tsx": "4.23.15",
     "typescript": "5.5.4"
   }
 }
