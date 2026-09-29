@@ -73,10 +73,8 @@
         "@prisma/client": "7.10.0",
         "@prisma/client-runtime-utils": "7.10.0",
         "dotenv": "^18.0.4",
-        "pg": "^8.23.0",
       },
       "devDependencies": {
-        "@types/pg": "^8.23.1",
         "@workspace-template/typescript-config": "*",
         "prisma": "7.10.0",
         "tsx": "4.23.15",
