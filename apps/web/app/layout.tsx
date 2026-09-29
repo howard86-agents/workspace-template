@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import type { ReactNode } from "react";
 import "./globals.css";
 import { Providers } from "./providers";
 
@@ -15,7 +14,7 @@ export const metadata: Metadata = {
   title: "Workspace Template",
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html className={inter.variable} lang="en">
       <body>
