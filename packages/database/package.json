@@ -15,16 +15,16 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@prisma/adapter-pg": "7.8.0",
-    "@prisma/client": "7.8.0",
-    "@prisma/client-runtime-utils": "7.8.0",
-    "dotenv": "^17.2.3",
-    "pg": "^8.22.0"
+    "@prisma/adapter-pg": "7.10.0",
+    "@prisma/client": "7.10.0",
+    "@prisma/client-runtime-utils": "7.10.0",
+    "dotenv": "^18.0.4",
+    "pg": "^8.23.0"
   },
   "devDependencies": {
-    "@types/pg": "^8.16.0",
+    "@types/pg": "^8.23.1",
     "@workspace-template/typescript-config": "*",
-    "prisma": "7.8.0",
+    "prisma": "7.10.0",
     "tsx": "4.23.15",
     "typescript": "5.5.4"
   }
