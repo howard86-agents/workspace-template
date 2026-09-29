@@ -23,6 +23,6 @@
     "@types/react-dom": "^19.3.0",
     "@workspace-template/typescript-config": "*",
     "tailwindcss": "^4.3.3",
-    "typescript": "5.5.4"
+    "typescript": "7.0.2"
   }
 }

@@ -26,6 +26,6 @@
     "@workspace-template/typescript-config": "*",
     "prisma": "7.10.0",
     "tsx": "4.23.15",
-    "typescript": "5.5.4"
+    "typescript": "7.0.2"
   }
 }
