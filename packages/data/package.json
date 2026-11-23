@@ -6,7 +6,8 @@
     ".": "./src/index.ts"
   },
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "clean": "rm -rf .turbo dist *.tsbuildinfo node_modules/.cache",
+    "typecheck": "bun check"
   },
   "devDependencies": {
     "@workspace-template/typescript-config": "*",

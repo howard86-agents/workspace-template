@@ -6,24 +6,24 @@
     ".": "./src/client.ts"
   },
   "scripts": {
+    "clean": "rm -rf .turbo generated *.tsbuildinfo node_modules/.cache",
     "db:migrate:deploy": "prisma migrate deploy",
     "db:migrate:dev": "prisma migrate dev",
     "db:push": "prisma db push",
-    "db:seed": "tsx src/seed.ts",
+    "db:seed": "bun src/seed.ts",
     "generate": "prisma generate",
     "studio": "prisma studio",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "bun check"
   },
   "dependencies": {
-    "@prisma/adapter-pg": "7.10.0",
-    "@prisma/client": "7.10.0",
-    "@prisma/client-runtime-utils": "7.10.0",
-    "dotenv": "^18.0.4"
+    "@prisma/adapter-pg": "7.10.1",
+    "@prisma/client": "7.10.1",
+    "@prisma/client-runtime-utils": "7.10.1",
+    "dotenv": "^18.0.10"
   },
   "devDependencies": {
     "@workspace-template/typescript-config": "*",
-    "prisma": "7.10.0",
-    "tsx": "4.23.15",
+    "prisma": "7.10.1",
     "typescript": "7.0.2"
   }
 }

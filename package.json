@@ -8,6 +8,7 @@
   "scripts": {
     "build": "turbo run build",
     "check": "ultracite check",
+    "clean": "turbo run clean && rm -rf .turbo node_modules/.cache",
     "db:migrate:deploy": "turbo run db:migrate:deploy",
     "db:migrate:dev": "turbo run db:migrate:dev",
     "db:push": "turbo run db:push",
@@ -23,19 +24,18 @@
     "*.{js,jsx,ts,tsx,json,jsonc,css,md,yml,yaml}": "ultracite fix"
   },
   "dependencies": {
-    "@prisma/adapter-pg": "7.10.0",
-    "@prisma/client": "7.10.0"
+    "@prisma/adapter-pg": "7.10.1",
+    "@prisma/client": "7.10.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.14",
-    "@commitlint/cli": "^21.2.3",
-    "@commitlint/config-conventional": "^21.2.3",
+    "@biomejs/biome": "2.6.8",
+    "@commitlint/cli": "^21.2.4",
+    "@commitlint/config-conventional": "^21.2.4",
     "husky": "^9.1.7",
-    "lint-staged": "^17.6.0",
-    "prisma": "7.10.0",
-    "tsx": "4.23.15",
-    "turbo": "^2.11.5",
-    "ultracite": "7.12.2"
+    "lint-staged": "17.6.2",
+    "prisma": "7.10.1",
+    "turbo": "^2.11.13",
+    "ultracite": "8.3.1"
   },
-  "packageManager": "bun@1.4.2"
+  "packageManager": "bun@1.4.5"
 }

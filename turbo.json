@@ -46,6 +46,9 @@
         "tsconfig.*.json"
       ],
       "outputs": []
+    },
+    "clean": {
+      "cache": false
     }
   }
 }
