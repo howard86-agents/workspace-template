@@ -6,6 +6,7 @@
     ".": "./src/client.ts"
   },
   "scripts": {
+    "clean": "rm -rf .turbo generated *.tsbuildinfo node_modules/.cache",
     "db:migrate:deploy": "prisma migrate deploy",
     "db:migrate:dev": "prisma migrate dev",
     "db:push": "prisma db push",

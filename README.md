@@ -36,9 +36,7 @@ bun run generate    # Prisma generate
 bun run db:push     # Push Prisma schema to local DB
 bun run db:seed     # Seed local DB
 bun run dev         # Run persistent dev tasks
-bun run clean       # Remove build outputs, Turbo/Next caches, generated Prisma client
-bun run clean --deps     # ...and every node_modules (then `bun install`)
-bun run clean --dry-run  # List what would be removed
+bun run clean       # Remove build outputs and caches in every app and package
 ```
 
 ## Quality gates
