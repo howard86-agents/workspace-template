@@ -40,12 +40,12 @@ bun run dev         # Run persistent dev tasks
 
 ## Quality gates
 
-| Gate | Runs | Bypass |
-|---|---|---|
-| `pre-commit` | lint-staged Ultracite fixes, staged Gitleaks scan | `git commit --no-verify` |
-| `commit-msg` | Commitlint Conventional Commits | `git commit --no-verify` |
-| `pre-push` | Ultracite check, Turbo typecheck, Typos, Gitleaks history scan | `git push --no-verify` |
-| CI | Ultracite check, typecheck, Typos, Gitleaks, actionlint | Required for merge |
+| Gate         | Runs                                                           | Bypass                   |
+| ------------ | -------------------------------------------------------------- | ------------------------ |
+| `pre-commit` | lint-staged Ultracite fixes, staged Gitleaks scan              | `git commit --no-verify` |
+| `commit-msg` | Commitlint Conventional Commits                                | `git commit --no-verify` |
+| `pre-push`   | Ultracite check, Turbo typecheck, Typos, Gitleaks history scan | `git push --no-verify`   |
+| CI           | Ultracite check, typecheck, Typos, Gitleaks, actionlint        | Required for merge       |
 
 Build is intentionally not in CI by default; Vercel previews should own app build validation unless a generated project decides otherwise.
 
